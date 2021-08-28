@@ -7,7 +7,7 @@ public class Books1 {
 	private int number;
 
 	public Books1(String title, int price) {
-		number ++;
+		count++;
 		this.title = title;
 		this.price = price;
 		this.number = Books1.count;

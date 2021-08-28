@@ -14,8 +14,8 @@ public class Books2 {
 	}
 
 	public void showBook() {
-		System.out.println("この本のタイトルは" + title + "、価格は" + price + "です。");
-		System.out.println("生成番号は" + number + "です。");
+		System.out.println("この本のタイトルは" + this.title + "、価格は" + this.price + "です。");
+		System.out.println("生成番号は" + this.number + "です。");
 	}
 
 	public static int getCount() {
