@@ -15,26 +15,31 @@ public class Practice0801 {
 		try {
 			while (true) {
 				System.out.println("数値を入力して下さい。(999で強制終了)＞");
-				int tmpnum = sin.nextInt();
+				int tmpNum = sin.nextInt();
 
-				if (tmpnum == 999) {
+				if (tmpNum == 999) {
 					break;
 				}
-				num[cnt] = tmpnum;
+				num[cnt] = tmpNum;
 				cnt++;
 			}
+
+			for (int i = 0; i < cnt; i++) {
+				sum += num[i];
+			}
+
+			ave = sum / cnt;
+
+			System.out.println("入力数は" + cnt + "です");
+			System.out.println("合計点は" + sum + "です");
+			System.out.println("平均点は" + ave + "です");
 		} catch (InputMismatchException e){
 			System.out.println("文字が入力されました。整数を入力してください");
+			sin.next();
+		} catch (ArithmeticException e) {
+			System.out.println(e + "という例外が発生しました");
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e + "という例外が発生しました");
 		}
-
-		for (int i = 0; i < cnt; i++) {
-			sum += num[i];
-		}
-
-		ave = sum / cnt;
-
-		System.out.println("入力数は" + cnt + "です");
-		System.out.println("合計点は" + sum + "です");
-		System.out.println("平均点は" + ave + "です");
 	}
 }
