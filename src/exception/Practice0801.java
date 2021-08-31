@@ -41,5 +41,7 @@ public class Practice0801 {
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println(e + "という例外が発生しました");
 		}
+
+		sin.close();
 	}
 }

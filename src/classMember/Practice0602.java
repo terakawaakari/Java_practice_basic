@@ -17,5 +17,7 @@ public class Practice0602 {
 		}
 
 		System.out.println("本の生成回数は「" + Books2.getCount() + "」回です。");
+
+		scan.close();
 	}
 }
