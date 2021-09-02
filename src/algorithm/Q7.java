@@ -9,7 +9,7 @@ public class Q7 {
 			return;
 		} else {
 			int sum = 0;
-			for (int i = 0; i <= n; i++) {
+			for (int i = 0; i < n; i++) {
 				int age = Integer.parseInt(args[i]);
 				sum += age;
 			}
