@@ -21,5 +21,6 @@ public class Q6 {
 		} else {
 			System.out.println("間違っています");
 		}
+		scan.close();
 	}
 }
