@@ -6,13 +6,15 @@ public class Q5 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		for (;;) {
-			System.out.println(">");
-			String param = scan.next();
+			System.out.print(">");
+			String param = scan.nextLine();
 
 			if (param.equals("EXIT")) {
 				break;
-			} else {
+			} else if (param.equals("")) {
 				System.out.println("未入力です");
+			} else {
+				System.out.println(param);
 			}
 		}
 	scan.close();
