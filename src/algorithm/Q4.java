@@ -11,14 +11,13 @@ public class Q4 {
 		System.out.println(sum);
 	}
 
-
 	public static int calc(String[] params, int startIdx, int endIdx) {
 		int sum = 0;
 		String type = null;
-		for(int i = startIdx; i < endIdx + 1; i++) {
+		for(int i = startIdx; i <= endIdx; i++) {
 			if (params[i].equals("+") || params[i].equals("-") ) {
 				type = params[i];
-			} else if (params[i].equals("(") || params[i] == "「") {
+			} else if (params[i].equals("(")) {
 				int endOfFormula = checkEndOfFormula(params, i);
 				if (type != null) {
 					if (type.equals("+")) {
