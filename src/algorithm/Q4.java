@@ -9,6 +9,7 @@ public class Q4 {
 		String[] params = line.split(" ");
 		int sum = calc(params, 0, params.length - 1);
 		System.out.println(sum);
+		scan.close();
 	}
 
 	public static int calc(String[] params, int startIdx, int endIdx) {

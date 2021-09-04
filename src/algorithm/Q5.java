@@ -8,6 +8,7 @@ public class Q5 {
 		for (;;) {
 			System.out.print(">");
 			String param = scan.nextLine();
+			scan.close();
 
 			if (param.equals("EXIT")) {
 				break;
@@ -17,6 +18,5 @@ public class Q5 {
 				System.out.println(param);
 			}
 		}
-	scan.close();
 	}
 }

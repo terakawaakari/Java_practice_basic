@@ -12,4 +12,9 @@ public class Books1 {
 		this.price = price;
 		this.number = Books1.count;
 	}
+
+	public static void main(String[] args) {
+		Books1 book = new Books1("Java入門" , 2980);
+		System.out.println(book.title + book.price + book.number);
+	}
 }
