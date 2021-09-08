@@ -1,8 +1,8 @@
-package iInheritance;
+package inheritance;
 
 public class Computer1 {
-	private String os;
-	private int memory;
+	protected String os;
+	protected int memory;
 
 	public Computer1() {
 		this.os = null;
