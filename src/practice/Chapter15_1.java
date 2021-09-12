@@ -9,7 +9,6 @@ public class Chapter15_1 {
 
 	public static int gcb(int a, int b) {
 		int notMatch = a % b;
-
 		if (notMatch == 0) {
 			return b;
 		}
