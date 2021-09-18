@@ -6,13 +6,11 @@ import java.util.List;
 public class Chapter14 {
 	public static void main(String[] args) {
 		List<Character> party = new ArrayList<Character>();
-		Soldier soldier = new Soldier();
-		Playboy boy = new Playboy();
-		party.add(soldier);
-		party.add(boy);
+		party.add(new Soldier());
+		party.add(new Playboy());
 		Chapter14.partyAttack(party);
 	}
-	
+
 	public static void partyAttack(List<Character> party) {
 		for (Character character : party) {
 			int hp = character.attack();
