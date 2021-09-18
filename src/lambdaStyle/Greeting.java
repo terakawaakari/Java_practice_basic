@@ -11,7 +11,7 @@ class Main {
 			System.out.println(word);
 		};
 
-		Greeting greeting2 = System.out::println;
+		Greeting greeting2 = System.out::println;		
 	}
 }
 
